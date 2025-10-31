@@ -9,6 +9,10 @@ license = {text = "MIT"}
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
+    "Flask>=3.0.0",
+    "iqoptionapi @ git+git://github.com/iqoptionapi/iqoptionapi.git",
+    "PyJWT>=2.8.0",
+    "PyYAML>=6.0.0",
 ]
 
 
