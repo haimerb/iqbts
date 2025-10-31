@@ -1,0 +1,4 @@
+# Configuration values for the iqbts services.
+flask:
+  # Name of the environment variable that stores the Flask secret key.
+  secret_key_env: IQBTS_SECRET_KEY
