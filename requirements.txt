@@ -1,0 +1,25 @@
+astroid==4.0.1
+blinker==1.9.0
+certifi==2025.10.5
+charset-normalizer==3.4.4
+click==8.3.0
+colorama==0.4.6
+dill==0.4.0
+Flask==3.1.2
+idna==3.11
+iqoptionapi @ git+https://github.com/iqoptionapi/iqoptionapi.git@8a903cc094a74af1ed935a56a2d6b5a9ed3319d7
+isort==7.0.0
+itsdangerous==2.2.0
+Jinja2==3.1.6
+MarkupSafe==3.0.3
+mccabe==0.7.0
+platformdirs==4.5.0
+PyJWT==2.10.1
+pylint==4.0.2
+PyYAML==6.0.3
+requests==2.32.5
+six==1.17.0
+tomlkit==0.13.3
+urllib3==2.5.0
+websocket-client==0.56.0
+Werkzeug==3.1.3
