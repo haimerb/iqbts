@@ -2,3 +2,18 @@
 flask:
   # Name of the environment variable that stores the Flask secret key.
   secret_key_env: IQBTS_SECRET_KEY
+
+database:
+  # PostgreSQL connection settings
+  # Use environment variables: DB_HOST, DB_PORT, DB_USER, DB_PASSWORD, DB_NAME
+  host_env: DB_HOST
+  port_env: DB_PORT
+  user_env: DB_USER
+  password_env: DB_PASSWORD
+  name_env: DB_NAME
+  # Defaults if env vars not set
+  host: localhost
+  port: 5433
+  user: iqbts_user
+  password: iqbts_password
+  name: iqbts_db
