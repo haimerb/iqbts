@@ -90,7 +90,7 @@ _active_sessions: Dict[str, Any] = {}
 def _generate_token(username: str) -> str:
     payload = {
         "username": username,
-        "exp": datetime.datetime.now(datetime.UTC) + datetime.timedelta(hours=24),
+        "exp": datetime.datetime.now(datetime.timezone.utc) + datetime.timedelta(hours=24),
     }
     token = jwt.encode(payload, app.config["SECRET_KEY"], algorithm="HS256")
     return token if isinstance(token, str) else token.decode("utf-8")
