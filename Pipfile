@@ -4,10 +4,15 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-iqoptionapi = {git = "git://github.com/iqoptionapi/iqoptionapi.git"}
+iqoptionapi = {git = "https://github.com/iqoptionapi/iqoptionapi.git"}
 flask = "*"
 pyjwt = "*"
 pyyaml = "*"
+sqlalchemy = "*"
+psycopg2-binary = "*"
+waitress = "*"
+bcrypt = "*"
+
 
 [dev-packages]
 pycodestyle = "*"
