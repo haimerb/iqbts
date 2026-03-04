@@ -28,6 +28,13 @@ import json
 
 logger = logging.getLogger(__name__)
 
+# Import Binance endpoints
+try:
+    from src.servicios import binance_api_endpoints
+    logger.info("Binance endpoints loaded successfully")
+except ImportError as e:
+    logger.warning(f"Binance endpoints not loaded: {e}")
+
 SETTINGS_PATH = Path(__file__).resolve().parents[2] / "config" / "settings.yaml"
 DEFAULT_SECRET_ENV = "IQBTS_SECRET_KEY"
 
